@@ -14,6 +14,13 @@ const App = () => {
 	const [type, setType] = useState('');
 	const [year, setYear] = useState('');
 
+	/**
+   * @description : Sends a request to fetch movies
+   *
+   * @author Ali Aryani
+   *
+   * @return server response array
+   */
 	const getMovieRequest = async (searchValue) => {
 		const url = `https://www.omdbapi.com/?s=${searchValue}&y=${year}&type=${type}&apikey=7e59a4ef`;
 
